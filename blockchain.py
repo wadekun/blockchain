@@ -102,12 +102,6 @@ class Blockchain(object):
 
         return False
 
-        if selected_chain != self.chain:
-            self.chain = selected_chain
-            return True
-
-        return False
-
     def new_block(self, proof, previous_hash):
         """
         create new block
